@@ -5,40 +5,65 @@
     <title>Transperant form</title>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="Login_page_style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-    <form style="display: block;">
-        <h3>Login Form</h3>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""> </a>
 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
-
-        <div id="password-container">
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="passwordInp">
-            <button type="button" id="eye-button" onmousedown="revealPassword()">
-                <img src="img/login/eye-white.svg" alt="" id="eye-img">
-            </button>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="Login_page.html">Login</a></li>
+                <li><a href="cart.html" id="lg-bag"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
 
         </div>
+    </section>
+    <section class="main-form">
 
-        <button type="submit">Log In</button>
-
-        <label id="noAcct">Dont't have a account? <a href="SignUp_page.html">Create Account</a></label>
-
-        <div class="logos">
-            <a href="#"> <img src="img/login/Facebook_Logo_(2019).png.webp" alt="facebook"></a>
-            <a href="#"><img src="img/login/2702602.png" alt="google"></a>
-            <a href="#" class="githubl"><img src="img/login/image_processing20220801-17461-1m9zilq.png"
-                    alt="github"></a>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
         </div>
-    </form>
+        <form style="display: block;">
+            <h3>Login Form</h3>
+
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email or Phone" id="username">
+
+            <div id="password-container">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="passwordInp">
+                <button type="button" id="eye-button" onmousedown="revealPassword()">
+                    <img src="img/login/eye-white.svg" alt="" id="eye-img">
+                </button>
+
+            </div>
+
+            <button type="submit">Log In</button>
+
+            <label id="noAcct">Dont't have a account? <a href="SignUp_page.html">Create Account</a></label>
+
+            <div class="logos">
+                <a href="#"> <img src="img/login/Facebook_Logo_(2019).png.webp" alt="facebook"></a>
+                <a href="#"><img src="img/login/2702602.png" alt="google"></a>
+                <a href="#" class="githubl"><img src="img/login/image_processing20220801-17461-1m9zilq.png"
+                        alt="github"></a>
+            </div>
+        </form>
+    </section>
 </body>
 
 <script>
