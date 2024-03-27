@@ -41,12 +41,12 @@ form {
 
 /* Form Element Styles */
 form * {
-    color: white;
+    color: beige;
     outline: none;
 }
 
 form h3 {
-    color: white;
+    color: beige;
     font-size: 2em;
     /* Responsive font size */
     font-weight: 500;
@@ -54,7 +54,7 @@ form h3 {
 }
 
 label {
-    color: white;
+    color: beige;
     display: block;
     margin-top: 2vh;
     /* Responsive margin */
@@ -66,6 +66,10 @@ label {
 
 #noAcct {
     visibility: visible;
+}
+
+#noAcct a {
+    color: rgb(224, 224, 158);
 }
 
 input {
