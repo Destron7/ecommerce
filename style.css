@@ -42,7 +42,7 @@ p {
 }
 
 .section-p1 {
-    padding: 40px 80px;
+    padding: 50px 80px 10px 80px;
 }
 
 .section-m1 {
@@ -335,6 +335,12 @@ body {
 #banner button:hover {
     background: #088178;
     color: #fff;
+}
+
+#carousel .carousel-inner .carousel-item img {
+    width: 100em !important;
+    height: 40vh !important;
+    object-fit: cover;
 }
 
 #sm-banner {
@@ -861,26 +867,26 @@ footer a:hover {
     .footer-last-text {
         padding: 20px 20px;
     }
-      /* about page */
-      #about-header
-      {
-          flex-direction: column;
-      }
-      #about-header img
-      {
-          width:100%;
-          margin-bottom:20px;
-      }
-      #about-header div
-      {
-          padding-left:40px;
-      }
-      #about-app .video
-      {
-          width:100%;
-          height :100%;
-          margin :30px auto 0 auto;
-      }
+
+    /* about page */
+    #about-header {
+        flex-direction: column;
+    }
+
+    #about-header img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-header div {
+        padding-left: 40px;
+    }
+
+    #about-app .video {
+        width: 100%;
+        height: 100%;
+        margin: 30px auto 0 auto;
+    }
 }
 
 /*Shop Page */
@@ -991,39 +997,38 @@ footer a:hover {
 }
 
 /* about starting */
-#page-header.about-header
-{
-    background-image:url("img/about/banner.png") ;
+#page-header.about-header {
+    background-image: url("img/about/banner.png");
 }
-#about-header
-{
-     display:flex;
-     align-items:center;
+
+#about-header {
+    display: flex;
+    align-items: center;
 }
-#about-header img
-{
-    width:50%;
-    height:auto;
+
+#about-header img {
+    width: 50%;
+    height: auto;
 }
-#about-header div
-{
-    padding-left:40px;
+
+#about-header div {
+    padding-left: 40px;
 }
-#about-app
-{
+
+#about-app {
     text-align: center;
 }
-#about-app .video
-{
-    width:70%;
-    height:100%;
-    margin:30px auto 0 auto;
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
 }
-#about-app .video video
-{
-    width:100%;
+
+#about-app .video video {
+    width: 100%;
     height: 100%;
     border-radius: 20px;
 }
-/* about ends */
 
+/* about ends */
