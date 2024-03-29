@@ -27,6 +27,10 @@
     height: 70vh;
 }
 
+.small-img-group {
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 477px) {
     #prodetails {
         display: flex;
