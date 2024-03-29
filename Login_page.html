@@ -41,7 +41,7 @@
             <h3>Login Form</h3>
 
             <label for="username">Username</label>
-            <input type="text" placeholder="Email or Phone" id="username">
+            <input type="text" placeholder="Email" id="username">
 
             <div id="password-container">
                 <label for="password">Password</label>
@@ -52,7 +52,7 @@
 
             </div>
 
-            <button type="submit">Log In</button>
+            <button type="submit" onclick="validation()">Log In</button>
 
             <label id="noAcct">Dont't have a account? <a href="SignUp_page.html">Create Account</a></label>
 
@@ -78,6 +78,61 @@
             eyeImg.setAttribute("src", "img/login/eye-white.svg");
         }
     }
+
+    function validation() {
+        let status = validateForm();
+        if (!status) {
+            alert("Invalid email or password");
+        } else {
+            alert("Valid email or password");
+        }
+    }
+
+    function validateForm() {
+        let finalStatus = false;
+        let mailStatus = false;
+        let passwordStatus = false;
+        // Get input values
+        var email = document.getElementById('username').value;
+        var password = document.getElementById('passwordInp').value;
+
+        // Regular expression for email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Regular expressions for password validation
+        var specialCharRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/; // Special character
+        var digitRegex = /\d/; // Digit
+        var uppercaseRegex = /[A-Z]/; // Uppercase letter
+        var lowercaseRegex = /[a-z]/; // Lowercase letter
+
+        // Validate email
+        if (!emailRegex.test(email)) {
+            mailStatus = false;
+        } else {
+            mailStatus = true;
+        }
+
+        // Validate password
+        if (
+            !specialCharRegex.test(password) ||
+            !digitRegex.test(password) ||
+            !uppercaseRegex.test(password) ||
+            !lowercaseRegex.test(password)
+        ) {
+            passwordStatus = false;
+        } else {
+            passwordStatus = true;
+        }
+
+        // Check if both email and password are valid
+        if (mailStatus && passwordStatus) {
+            finalStatus = true;
+        } else {
+            finalStatus = false;
+        }
+        return finalStatus;
+    }
+
 </script>
 
 </html>
