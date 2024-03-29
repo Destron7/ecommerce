@@ -595,6 +595,11 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
+#prodetails .single-pro-details .buy-now-button {
+    margin-top: 10px;
+    width: 13.5rem;
+}
+
 #prodetails .single-pro-details select {
     background: linear-gradient(to bottom, rgb(204, 204, 173), #fbfbfb, rgb(204, 204, 173));
     border: none;
